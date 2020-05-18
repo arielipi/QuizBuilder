@@ -1,0 +1,155 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+body {
+	margin: 0; font-size: 13px; line-height: 1.231; background: #FFF url(images/line-bg.png);
+	/*background: #BEEB9F;*/
+	/*background-color: #ADD8E6;*/
+}
+
+
+body.first {
+	margin: 0; font-size: 13px; line-height: 1.231; background: #FFF url(images/line-bg.png);
+	/*background: #BEEB9F;*/
+	/*background-color: #ADD8E6;*/
+}
+
+h1 {
+	font-size: 5em;
+	font-weight: bold;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+/*
+h2 {
+	text-shadow: 0.1em 0.1em 0.2em black;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1em;
+}*/
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: #ADD8E6;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+table.center {
+	margin: 0 auto;	
+	font-size: x-large; /*15px;*/
+	line-height: 1.231; background: #E8E8E8 /*ADD8E6*/
+											/* url(images/line-bg.png);*/
+										;
+	/*background: rgba(255,255,255,0.7);*/
+	box-shadow: 15px 15px 15px #ffffff;
+}
+
+table.welcome {
+	/*margin: 0 auto;*/     
+	background: #FFFF9D;
+	/*background: rgba(255,255,255,0.7);*/
+	/*margin: 0; line-height: 1.231; background: #FFFF9D url(images/line-bg.png);*/
+	/*text-shadow: 0.1em 0.1em 0.2em black*/
+}
+
+table.games {
+	border-collapse:collapse;
+	width:90%;
+	border: 2px solid white;
+	margin: 0; font-size: 13px; line-height: 1.231; /*background: #ADD8E6 url(images/line-bg.png);*/
+	background-color: #ADD8E6;
+	table-layout: fixed;
+}
+
+table#editQTable {
+	font-size: large;
+}
+
+table#addQTable {
+	font-size: large;
+}
+
+table#gamesListTablePrivateGames {
+	font-size: x-large;
+	/*color: #FF6138;*/
+}
+
+table#gamesListTablePublicGames {
+	font-size: x-large;
+	/*color: #FF6138;*/    
+}
+
+th.center {
+	margin: 0 auto; 
+	font-size: x-large; /*15px;*/
+	line-height: 1.231; background: #FFF url(images/line-bg.png);
+	/*background: rgba(255,255,255,0.7);*/
+	box-shadow: 15px 15px 15px #ffffff;
+}
+
+th.welcome {
+	margin: 0 auto; 
+	/*background: rgba(255,255,255,0.7);*/
+	margin: 0; line-height: 1.231; /*background: #ADD8E6 url(images/back2.png);*/
+	background: #ADD8E6;
+	text-shadow: 0.1em 0.1em 0.2em black
+}
+
+
+
+div.floatLeft { 
+	width: 50%; float: left;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+div.floatRight {
+	width: 50%; float: right;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+div.container {
+	overflow: hidden;
+}
+
+div.user {
+	height: 20%; 
+	margin: 0; line-height: 1.231; /*background: #ADD8E6 url(images/line-bg.png);*/
+	background: #FFFF9D; /*#ADD8E6;/*#418BD6;*/
+	font-size: 2em;
+}
+
+div.navigation {
+	float: left;
+	width: 15%; 
+	margin: 0; line-height: 1.231; background: #FFF url(images/line-bg.png);
+	/*background: #ADD8E6;*/
+	font-size: 2em
+}
+
+div.main {
+	float: right;
+	width: 90%; /*85%;*/
+	text-align: center;
+}

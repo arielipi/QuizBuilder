@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdoconfig xmlns="http://java.sun.com/xml/ns/jdo/jdoconfig"
+   xmlns:xsi="http://www.w3.org/2001/xmlschema-instance">
+
+   <persistence-manager-factory name="transactions-optional">
+       <property name="javax.jdo.persistencemanagerfactoryclass"
+           value="org.datanucleus.api.jdo.jdopersistencemanagerfactory"/>
+       <property name="javax.jdo.option.connectionurl" value="appengine"/>
+       <property name="javax.jdo.option.nontransactionalread" value="true"/>
+       <property name="javax.jdo.option.nontransactionalwrite" value="true"/>
+       <property name="javax.jdo.option.retainvalues" value="true"/>
+       <property name="datanucleus.appengine.autocreatedatastoretxns" value="true"/>
+       <property name="datanucleus.appengine.singletonpmfforname" value="true"/>
+   </persistence-manager-factory>
+</jdoconfig>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>SPserver</servlet-name>
+    <servlet-class>quiz_builder.server.SPRequestHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SPserver</servlet-name>
+    <url-pattern>/SPRequestHandler</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DownloadGame</servlet-name>
+    <servlet-class>quiz_builder.site.DownloadGame</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DownloadGame</servlet-name>
+    <url-pattern>/DownloadGame</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ImportGame</servlet-name>
+    <servlet-class>quiz_builder.site.ImportGame</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ImportGame</servlet-name>
+    <url-pattern>/ImportGame</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DownloadTemplate</servlet-name>
+    <servlet-class>quiz_builder.site.DownloadTemplate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DownloadTemplate</servlet-name>
+    <url-pattern>/DownloadTemplate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MPserver</servlet-name>
+    <servlet-class>quiz_builder.server.MPRequestHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MPserver</servlet-name>
+    <url-pattern>/MPRequestHandler</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>save</servlet-name>
+    <servlet-class>quiz_builder.site.SaveServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>save</servlet-name>
+    <url-pattern>/Save</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>LanguageSetter</servlet-name>
+		<servlet-class>quiz_builder.site.LanguageSetter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LanguageSetter</servlet-name>
+		<url-pattern>/LanguageSetter</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <servlet-class>quiz_builder.site.FeedbackServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <url-pattern>/FeedbackServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>quiz_builder.site.ImageServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+		<servlet-name>AddQuestion</servlet-name>
+		<servlet-class>quiz_builder.site.AddQuestion</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteGame</servlet-name>
+		<servlet-class>quiz_builder.site.DeleteGame</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteQuestion</servlet-name>
+		<servlet-class>quiz_builder.site.DeleteQuestion</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>EditQuestion</servlet-name>
+		<servlet-class>quiz_builder.site.EditQuestion</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteLevel</servlet-name>
+		<servlet-class>quiz_builder.site.DeleteLevel</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AddLevel</servlet-name>
+		<servlet-class>quiz_builder.site.AddLevel</servlet-class>
+	</servlet>
+ 
+	<servlet-mapping>
+		<servlet-name>AddQuestion</servlet-name>
+		<url-pattern>/AddQuestion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EditQuestion</servlet-name>
+		<url-pattern>/EditQuestion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteGame</servlet-name>
+		<url-pattern>/DeleteGame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteQuestion</servlet-name>
+		<url-pattern>/DeleteQuestion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteLevel</servlet-name>
+		<url-pattern>/DeleteLevel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddLevel</servlet-name>
+		<url-pattern>/AddLevel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ImageServlet</servlet-name>
+		<url-pattern>/ImageServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>gamesList.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

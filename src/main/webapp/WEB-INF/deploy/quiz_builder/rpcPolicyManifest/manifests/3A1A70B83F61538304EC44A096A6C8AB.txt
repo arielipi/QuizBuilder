@@ -1,0 +1,2 @@
+serviceClass: com.project.quiz_builder.client.GreetingService
+path: 496967618902AD771518A2166AB8336F.gwt.rpc
